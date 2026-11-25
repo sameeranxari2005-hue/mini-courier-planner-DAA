@@ -1,0 +1,18 @@
+{
+  "box_capacity": 14,
+  "parcels": [
+    {"id": "P1", "weight": 4, "value": 40, "priority": 2, "deadline": 5, "destination": "A"},
+    {"id": "P2", "weight": 7, "value": 85, "priority": 3, "deadline": 2, "destination": "B"},
+    {"id": "P3", "weight": 5, "value": 55, "priority": 1, "deadline": 4, "destination": "C"},
+    {"id": "P4", "weight": 3, "value": 35, "priority": 3, "deadline": 3, "destination": "D"},
+    {"id": "P5", "weight": 6, "value": 70, "priority": 2, "deadline": 1, "destination": "E"}
+  ],
+  "graph": {
+    "Depot": {"A": 4, "B": 8, "C": 6},
+    "A": {"Depot": 4, "B": 5, "D": 7},
+    "B": {"Depot": 8, "A": 5, "C": 3, "E": 6},
+    "C": {"Depot": 6, "B": 3, "D": 4, "E": 9},
+    "D": {"A": 7, "C": 4, "E": 2},
+    "E": {"B": 6, "C": 9, "D": 2}
+  }
+}
